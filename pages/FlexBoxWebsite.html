@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FlexBox Website-3</title>
+    <style>
+        body {
+            padding: 2em;
+        }
+
+        .headerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background-color: tomato;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .footerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background-color: lightgreen;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .mainContainer {
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .mainContainerItem {
+            text-align: left;
+            background: deepskyblue;
+        }
+
+        article {
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+        }
+
+        .sideBarLeftItem {
+            background: gold;
+        }
+
+        .sideBarItem {
+            flex: 1 0 0;
+            border: 1px solid green;
+        }
+
+        .mainContainerItem {
+            flex: 3 0px;
+        }
+
+        .sideBarLeftItem {
+            order: 1;
+        }
+
+        .mainContainerItem {
+            order: 2;
+        }
+
+        .sideBarRightItem {
+            order: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="headerContainer">
+        <h1>HEADER - SAMPLE FLEXBOX EXAMPLE</h1>
+    </header>
+    <div class="mainContainer">
+        <section class="mainContainerItem">
+            <article>
+                <h2>Website Layout 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea officiis voluptatum odit repellendus eum
+                    velit ipsum veritatis, magni quibusdam corporis, et qui, quo iste? Quam nam incidunt quibusdam
+                    assumenda, minus, est voluptas labore fuga, aliquid ex minima dolores eum obcaecati aperiam eius
+                    totam? Voluptatum labore facilis, eos iure itaque perspiciatis est rerum suscipit, corrupti
+                    voluptas, autem aut accusamus iusto officiis optio sunt id quod. Impedit laudantium ad, nesciunt
+                    ipsa molestiae veritatis non itaque voluptatum, veniam iure alias, aspernatur sunt quis mollitia
+                    debitis deserunt aperiam autem deleniti consectetur molestias quo natus aut eius! Quae voluptate
+                    corporis aliquid reiciendis sequi, in consectetur?
+                </p>
+            </article>
+            <article>
+                <h2>Website Layout 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum repellendus doloremque corrupti! Quis
+                    id recusandae minima optio officiis impedit rerum aspernatur repellat, vitae ea blanditiis! Quidem
+                    ducimus autem obcaecati deleniti eum cupiditate sit ab temporibus, velit provident adipisci officiis
+                    eaque blanditiis molestiae dignissimos dolores qui aliquam ex suscipit? Eos, dicta? Cupiditate
+                    quidem doloribus, ratione quia alias voluptatum aliquam ad deleniti, tempore sed velit temporibus at
+                    rerum eum. Cum quibusdam necessitatibus explicabo, fuga doloribus temporibus molestiae?</p>
+            </article>
+            <article>
+                <h2>Website Layout 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio atque vitae suscipit praesentium modi
+                    quo beatae, nemo, molestias repudiandae, molestiae libero iusto et cupiditate sapiente! Sequi
+                    voluptate animi officiis adipisci quia illo, voluptatibus laboriosam. Exercitationem laudantium
+                    maxime aliquid, dolore unde rem eos suscipit ex vitae! Nam, aliquid consequatur architecto, eius in
+                    fugiat ipsum corporis possimus velit, mollitia suscipit repellat quos aperiam vero. Molestias,
+                    accusamus ullam. Deserunt exercitationem beatae quos delectus, qui eligendi itaque ipsam tenetur a
+                    ipsum id ducimus architecto?</p>
+            </article>
+        </section>
+        <sidebar class="sideBarItem sideBarLeftItem">
+            <p>Left Side Bar</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium expedita quibusdam saepe ex rerum.
+                Commodi, ipsam. Harum tempora, corrupti fugiat nemo voluptatum minus neque id suscipit sint, dicta modi
+                dolorem?</p>
+        </sidebar>
+    </div>
+    <footer class="footerContainer">Footer</footer>
+</body>
+
+</html>
